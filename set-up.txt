@@ -1,0 +1,51 @@
+tải 2 source về,
+require: PHP version > =8
+node: 20
+
+tải source backend, import data vào trong xampp với file edu-management.sql
+chạy: php artisan serve --port=8080
+============xong backend==============
+source back end:
+install dependencies: npm i | yarn install
+chạy source: npm run dev | yarn dev
+
+login admin: admin/admin@123456
+login teacher: chinlteacher/123456
+login student: chinl/123456
+lớp có sinh viên nhiều nhất 15 học sinh: lớp PHP
+
+__________________________________________________________________________________________________________
+
+
+back end:
+	+ Open folder edu-management
+	+ Run 'composer install' to install dependencies, make sure your version is fit with source
+	+ Create DB:
+		DB_DATABASE=edu-management
+		DB_USERNAME=root
+		DB_PASSWORD=
+		if using password, please update in .env file
+	+ Run 'php artisan migrate to crate DB'
+	+ Run php artisan serve --port=8080
+	
+front end:
+	+ Open folder Student-Management
+	+ Run 'npm i' to install dependencies
+	+ Run 'npm run dev' to run source
+
+Success -> login localhost:3000
+
+______________________________
+
+
+open terminal 
+backend:
+	cd C:\Users\LINH CHI\Downloads\edu-management\edu-management
+	run 'php artisan serve --port=8080'
+
+front end:
+	open new terminal 
+	cd D:\Student-Management
+	run 'npm run dev'
+
+
